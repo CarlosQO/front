@@ -74,7 +74,7 @@ formulario.addEventListener("submit", async (e) => {
 
     if (resultado.exito) {
       mostrarMensaje("Registro exitoso", "success");
-      setTimeout(() => (window.location.href = "login.html"), 2000);
+      setTimeout(() => (window.location.href = "InicioSesion.html"), 2000);
     } else {
       mostrarMensaje(resultado.mensaje || "No se pudo completar el registro.");
     }
