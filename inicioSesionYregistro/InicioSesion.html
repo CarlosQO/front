@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.css">
+</head>
+
+<body class="bg-light">
+
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="text-center mb-4">Iniciar sesión</h4>
+          <form id="formu">
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electronico</label>
+              <input type="email" class="form-control" id="correo" placeholder="pepitoPerez@gmail.com" minlength="10" required>
+            </div>
+            <div class="mb-3">
+              <label for="clave" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="clave" placeholder="*********" minlength="8" required>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
+          </form>
+          <div class="text-center mt-3">
+            <a href="#" class="text-decoration-none">¿Olvidaste tu contraseña?</a>
+            <br>
+            <a href="#" class="text-decoration-none">¿Registrarse?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="InicioSesion.js"></script>
+</body>
+
+</html>

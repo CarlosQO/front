@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="col-md-6 mx-auto">
+            <h2 class="text-center mb-4">Crear Cuenta</h2>
+
+            <div id="alerta"></div>
+
+            <form id="formularioRegistro" class="p-4 border rounded bg-white shadow-sm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre completo</label>
+                    <input type="text" id="nombre" class="form-control" placeholder="Ej: Carlos Quiñones">
+                </div>
+
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <input type="email" id="correo" class="form-control" placeholder="Ej: usuario@gmail.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" id="telefono" class="form-control" placeholder="Ej: 3153246813">
+                </div>
+
+                <div class="mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" id="contraseña" class="form-control" placeholder="Mínimo 8 caracteres">
+                </div>
+
+                <div class="mb-3">
+                    <label for="confirmar" class="form-label">Confirmar contraseña</label>
+                    <input type="password" id="confirmar" class="form-control" placeholder="Repite tu contraseña">
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Registrarme</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="registro.js"></script>
+</body>
+
+</html>
