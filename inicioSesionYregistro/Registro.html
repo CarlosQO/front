@@ -12,24 +12,39 @@
 
     <div class="container mt-5">
         <div class="col-md-6 mx-auto">
-            <h2 class="text-center mb-4">Crear Cuenta</h2>
-
+            <h2 class="text-center mb-4">Registrar cuenta</h2>
             <div id="alerta"></div>
-
             <form id="formularioRegistro" class="p-4 border rounded bg-white shadow-sm">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre completo</label>
-                    <input type="text" id="nombre" class="form-control" placeholder="Ej: Carlos Quiñones">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nombreUsuario" class="form-label">Nombre de usuario</label>
+                        <input type="text" id="nombreUsuario" class="form-control" placeholder="Carlos007">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" id="correo" class="form-control" placeholder="usuario@gmail.com">
+                    </div>
                 </div>
+                    
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nombre" class="form-label">Primer Nombre</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Carlos">
+                    </div>
 
-                <div class="mb-3">
-                    <label for="correo" class="form-label">Correo electrónico</label>
-                    <input type="email" id="correo" class="form-control" placeholder="Ej: usuario@gmail.com">
+                    <div class="col-md-6 mb-3">
+                        <label for="apellido" class="form-label">Primer Apellido</label>
+                        <input type="text" id="apellido" class="form-control" placeholder="Quiñones">
+                    </div>
                 </div>
-
                 <div class="mb-3">
                     <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="tel" id="telefono" class="form-control" placeholder="Ej: 3153246813">
+                    <input type="tel" id="telefono" class="form-control" placeholder="3153246813">
+                </div>
+
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" id="direccion" class="form-control" placeholder="cra 22 # 00 c3 43">
                 </div>
 
                 <div class="mb-3">
@@ -50,5 +65,6 @@
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.js"></script>
     <script src="registro.js"></script>
 </body>
+
 
 </html>
