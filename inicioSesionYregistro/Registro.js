@@ -3,6 +3,8 @@ const alerta = document.getElementById("alerta");
 
 // Expresiones regulares básicas
 const formatoCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
 const formatoNombreApelli = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,40}$/;
 const formatoTelefono = /^3\d{9}$/;
 const formatoContraseña = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
@@ -73,8 +75,7 @@ formulario.addEventListener("submit", async (e) => {
   }
 
   const datosUsuario = {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
     username: usuario,
     email: correo,
     first_name: nombre,
@@ -83,37 +84,10 @@ formulario.addEventListener("submit", async (e) => {
     address: direccion,
     password: contraseña,
     password2: confirmar,
-=======
-=======
->>>>>>> Stashed changes
-    
-    nombre,
-    correo,
-    telefono,
-    contraseña,
-    confirmar,
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   };
-  /*
-  {
-    "username": "carlos",
-    "email": "carlos@example.com",
-    "first_name": "carlos",
-    "last_name": "Quiñones",
-    "phone": "3201234567",
-    "address": "Calle 123456",
-    "password": "MiClaveSegura123456",
-    "password2": "MiClaveSegura123456"
-  }
-  */
 
   try {
     // Enviar al servidor
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     const respuesta = await fetch(
       "http://127.0.0.1:8001/api/usuarios/registro/",
       {
@@ -122,15 +96,7 @@ formulario.addEventListener("submit", async (e) => {
         body: JSON.stringify(datosUsuario),
       }
     );
-=======
-=======
->>>>>>> Stashed changes
-    const respuesta = await fetch("http://127.0.0.1:8001/api/usuarios/registro/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(datosUsuario),
-    });
->>>>>>> Stashed changes
+
 
     const resultado = await respuesta.json();
     console.log(resultado);
