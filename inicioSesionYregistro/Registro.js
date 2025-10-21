@@ -74,6 +74,7 @@ formulario.addEventListener("submit", async (e) => {
 
   const datosUsuario = {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     username: usuario,
     email: correo,
     first_name: nombre,
@@ -83,12 +84,17 @@ formulario.addEventListener("submit", async (e) => {
     password: contraseña,
     password2: confirmar,
 =======
+=======
+>>>>>>> Stashed changes
     
     nombre,
     correo,
     telefono,
     contraseña,
     confirmar,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   };
   /*
@@ -107,6 +113,7 @@ formulario.addEventListener("submit", async (e) => {
   try {
     // Enviar al servidor
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     const respuesta = await fetch(
       "http://127.0.0.1:8001/api/usuarios/registro/",
       {
@@ -116,6 +123,8 @@ formulario.addEventListener("submit", async (e) => {
       }
     );
 =======
+=======
+>>>>>>> Stashed changes
     const respuesta = await fetch("http://127.0.0.1:8001/api/usuarios/registro/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
