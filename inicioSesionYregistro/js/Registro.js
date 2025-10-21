@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const form = document.getElementById("formularioRegistro");
 
-  // 💬 Función para mostrar mensajes simples
+  // Función para mostrar mensajes simples
   function mostrarMensaje(texto, tipo = "danger") {
     alert(texto);
   }
